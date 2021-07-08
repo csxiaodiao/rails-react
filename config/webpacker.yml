@@ -39,6 +39,8 @@ default: &default
     - .sass
     - .scss
     - .css
+    - .less
+    - .module.less
     - .module.sass
     - .module.scss
     - .module.css

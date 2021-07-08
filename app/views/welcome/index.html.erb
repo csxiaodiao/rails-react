@@ -1,0 +1,17 @@
+
+<h1>Welcome#index</h1>
+<div style="width: 480px; margin: 10px auto;">
+  <%= react_component('ComponentTest', { checked: 1, unchecked: 0 }) %>
+  <%= react_component('FormTreeSelect') %>
+  <%= react_component("Hello", {name: "react-rails"}) %>
+</div>
+
+
+<h1 class="logo">Eventlite</h1>
+
+<%= javascript_pack_tag 'Eventlite' %>
+
+<%= content_tag :div,
+  id: "events_data",
+  data: @events.to_json do %>
+<% end %>
